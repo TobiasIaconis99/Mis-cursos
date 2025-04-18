@@ -1,0 +1,16 @@
+﻿@model List<ModelUsuario>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>Id: @item.id, Nombre: @item.nombre</li>
+    }
+
+</ul>
+

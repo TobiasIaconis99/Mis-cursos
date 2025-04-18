@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica formularios</title>
+</head>
+<body>
+    <form action="index.html" method="get">
+        <label for="inputNombre">Ingrese el nombre</label>
+        <input id="inputNombre" name="nombre" placeholder="nombre">
+        <br>
+        <label for="inputApellido">Ingrese el apellido</label>
+        <input id="inputApellido" name="apellido">
+        <br>
+        <label for="inputMail">Email</label>
+        <input id="inputMail" name="mail" type="email">
+        <br>
+        <label>Contraseña</label>
+        <input id="inputPass" type="password" name="pass" checked>
+        <br>
+        <input type="file">
+        <br>
+        <input type="checkbox" value="check" checked>
+        <br>
+        <input type="radio">
+        <br>
+        <input type="number">
+        <br>
+        <select>
+            <option value="-1">Seleccione...</option>
+            <option value="0">Don torcuato</option>
+            <option value="1">San miguel</option>
+            <option value="2" selected>Pacheco</option>
+        </select>
+
+        <div>
+            <button id="btnGuardar">Guardar</button>
+            <!-- <input type="submit" id="btnGuardarInput" value="Guardar submit"> -->
+        </div>
+    </form>
+</body>
+</html>
