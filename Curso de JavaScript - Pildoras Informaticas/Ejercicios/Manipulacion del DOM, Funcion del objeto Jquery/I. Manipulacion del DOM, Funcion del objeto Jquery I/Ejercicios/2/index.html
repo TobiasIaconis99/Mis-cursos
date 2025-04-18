@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="content">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur
+             adipisicing elit. Unde, laborum modi autem, nemo
+             ? Molestias consectetur veritatis dolores modi, laudantium iste vol
+             uptatibus facere.
+        </p>
+        <div style="background-color: brown;">asd</div>
+    </div>
+    <button type="button" style="margin-top: 10px;" onclick="cambiarHTML()">cambiar html</button>
+</body>
+<script>
+    function cambiarHTML(){
+        let content = $("#content");
+        //content.html("<p>Este es un texto agregado</p>");
+        content.html(`
+            <p>Este es un texto agregado</p>
+            <button id="botonAgregado" onclick="botonAgregado()" type="button">Soy un boton agregado</button>
+        `);
+    }
+
+    function botonAgregado(){
+        let boton = $("#botonAgregado");
+        boton.text("Cambie el texto");
+    }
+</script>
+</html>
