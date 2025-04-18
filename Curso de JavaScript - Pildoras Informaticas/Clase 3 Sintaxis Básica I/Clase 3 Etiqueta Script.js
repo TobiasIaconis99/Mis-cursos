@@ -1,0 +1,1 @@
+alert("Estoy en un archivo externo ")
