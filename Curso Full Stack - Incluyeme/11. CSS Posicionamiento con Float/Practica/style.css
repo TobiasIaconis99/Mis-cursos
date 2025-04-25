@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    margin: 2rem;
+    padding: 2rem;
+    width: 80vw;
+    background-color: bisque;
+}
+
+
+img{
+    float: right;
+    width: 30%;
+    margin-left: 2rem;
+}
+
+
+p{
+    margin-top: 2rem;
+}
+
+header{
+    background-color: rgb(109, 228, 228);
+    width: 70%;
+}
